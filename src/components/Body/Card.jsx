@@ -17,7 +17,7 @@ const Card = ({ data, search }) => {
   return (
     <div className={styles["card-container"]}>
       {filtered.length === 0 ? (
-        <p>{text}</p>
+        <h6>{text}</h6>
       ) : search.length > 0 ? (
         filtered.map((item, index) => {
           const { name, img, statistics } = item;
