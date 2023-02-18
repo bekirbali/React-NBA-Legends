@@ -1,8 +1,12 @@
 .main-container {
   text-align: center;
-  margin-top: 1rem;
+
+  background-image: url("https://images.unsplash.com/photo-1504450758481-7338eba7524a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 1rem 0;
   .container {
-    margin-top: 1rem;
     width: 100%;
   }
 
@@ -17,9 +21,13 @@
     min-width: 150px;
     max-width: 400px;
     border-radius: 0.4rem;
+    background-color: rgba(240, 248, 255, 0.568);
+    margin-bottom: 1rem;
 
     &:focus {
       outline: none;
+      background-color: white;
+      color: black;
     }
   }
 }

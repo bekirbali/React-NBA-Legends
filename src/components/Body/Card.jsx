@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import styles from "./Card.module.scss";
-import { FaBasketballBall } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
 
 const Card = ({ data, search }) => {
   const [text, setText] = useState(["No Matches!!!"]);
@@ -25,11 +25,11 @@ const Card = ({ data, search }) => {
             <div key={index} className={styles.card}>
               <div className={styles.image}>
                 <p className={styles.stats}>
-                  {statistics.map((x) => {
+                  {statistics.map((item) => {
                     return (
                       <li>
-                        <FaBasketballBall color="black" size="32px" />
-                        {x}
+                        {<FaTimes />}
+                        {item}
                       </li>
                     );
                   })}
