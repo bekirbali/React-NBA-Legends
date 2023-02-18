@@ -5,6 +5,16 @@
   justify-content: center;
   gap: 1rem;
 
+  h6 {
+    color: white;
+    font-size: 2rem;
+    background-color: #000000c5;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    letter-spacing: 0.5rem;
+  }
+
   .card {
     display: flex;
     flex-direction: column;
